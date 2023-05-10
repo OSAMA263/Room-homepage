@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css" />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./all.min.css" />
+  </head>
+  <body onload=" ChangeBg()" style="overflow-x: hidden">
+    <div id="dark" class="align-items-center justify-content-center d-flex bg-div bg-dark">
+      <div class="text">
+        <h4 id="head" class="text-muted">Frontend Mentor</h4>
+        <h2 id="dis" class="fw-bold text-light">
+          Room Homepage
+        </h2>
+        <h4 id="dis2"class="fw-bold text-light">by ApplePieGiraffe</h4>
+      </div>
+    </div>
+    <div id="light" class="bg-light b position-absolute"></div>
+    <nav class="navbar navbar-light bg-dark fixed-top navbar-expand-lg">
+      <div class="container-fluid mx-5 my-2">
+        <a href="" class="navbar-brand p-0 text-light fs-3 fw-bold">room</a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#navbar"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-4">
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold text-light">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold text-light">shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold text-light">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold text-light">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end off navbar -->
+    <div class="row">
+      <!-- carousel images -->
+      <div class="col-lg-7 overflow-hidden col-12 vh-65 p-0 position-relative">
+        <img
+          style="object-fit: cover"
+          class="w-100 position-absolute active h-100"
+          src="../imgs/desktop-image-hero-3.jpg"
+          alt=""
+          id="preview_img"
+        />
+        <img
+          style="object-fit: cover"
+          class="w-100 position-absolute inactive h-100"
+          src="../imgs/./desktop-image-hero-1.jpg"
+          alt=""
+          id="preview_img"
+        />
+        <img
+          style="object-fit: cover"
+          class="w-100 position-absolute inactive h-100"
+          src="../imgs/desktop-image-hero-2.jpg"
+          alt=""
+          id="preview_img"
+        />
+        <!-- next & prev carousel btns -->
+        <div class="end-0 d-flex position-absolute bottom-0">
+          <button id="prev"
+            class="btn border-none btn-dark rounded-0 p-3 px-5 fs-2 shadow-none text-light"
+          >
+            <</button
+          ><button id="next"
+            class="btn border-none btn-dark shadow-none rounded-0 p-3 px-5 fs-2 text-light"
+          >
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="col-lg-5 my-6 my-lg-0 col-12 p-0 vh-lg-65 vh-35 justify-content-center align-items-center d-flex"
+      >
+        <!-- carousel text info -->
+        <div class="w-lg-50 w-85 my-lg-0 my-5 carousel-text overflow-hidden">
+          <h1 id="heading" class="fw-bold mb-4">Discover innovative ways to decorate.</h1>
+          <p id="info" class="text-muted mb-4">
+            We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <a id="item_link" href="#" class="py-3 d-flex align-items-center text-dark fw-bold text-decoration-none"
+            ><span class="me-3 shop-text">SHOPE</span
+            ><span class="shop-text">NOW</span><span class="ms-4 fs-3 fw-bold">→</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- --------------------section 2----------------- -->
+
+    <div class="row justify-content-center align-items-center vh-35">
+      <div class="col-lg-4 col-12 vh-lg-35 p-0">
+        <img
+          style="object-fit: cover"
+          class="w-100 h-100"
+          src="../imgs/image-about-dark.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-4 col-12 vh-35 d-flex align-items-center mx-auto">
+        <div class="about-text w-85 mx-auto">
+          <h5 class="ws-bold">ABOUT OUR FURNITURE</h5>
+          <small class="text-muted">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </small>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 vh-lg-35 p-0">
+        <img
+          style="object-fit: cover"
+          class="w-100 h-100"
+          src="../imgs/image-about-light.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="s.js"></script>
+    <script src="./all.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.shop-text{
+  letter-spacing: .56rem;
+}
+#preview_img{
+  transition: 1s;
+  opacity: 1;
+}
+#preview_img.inactive{
+  opacity: 0;
+  transform: scale(1.5);
+}
+/* ----item information text---- */
+#heading,#item_link,#info{
+  opacity:1;
+  transition: 1s;
+}
+#heading.hidden,#item_link.hidden,#info.hidden{
+  opacity: 0;
+}
+.bg-div{
+  position: fixed;
+  top: 0;
+  transition: 1s;
+  transition-delay: 2s;
+  transition-property: height;
+  width: 100vw;
+  height: 100%;
+  z-index: 5555555555555;
+  overflow: hidden;
+}
+.b{
+  transition: 1s;
+  transition-delay: 2.7s;
+  transition-property: height;
+  z-index: 55555;
+  width: 100vw;
+  height: 100%;
+}
+#dis,#dis2{
+  max-height: 0;
+  transition: 3s;
+  overflow: hidden;
+  transition-delay: 800ms;
+  transition-property: max-height;
+}
+#head{
+  transition: 4s;
+  max-height: 0;
+  overflow: hidden;
+}
